@@ -1,2 +1,7 @@
+
 <h1>hello</h1>
 <li><%=link_to 'Logout', destroy_user_session_path, method: :delete  %> </li>
+
+<%if current_user.admin == true %>
+<h1>hello admin</h1>
+<%end%>
